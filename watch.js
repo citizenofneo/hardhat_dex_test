@@ -1,5 +1,5 @@
-import { watch } from "chokidar";
-import { exec } from "child_process";
+const { watch } = require("chokidar");
+const { exec } = require("child_process");
 
 setWatcher("./contracts", "npx hardhat compile");
 

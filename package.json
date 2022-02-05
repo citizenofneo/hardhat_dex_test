@@ -4,7 +4,6 @@
     "test": "hardhat test --network localhost",
     "dev": "node watch"
   },
-  "type":"module",
   "name": "hardhat-project",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.4",
