@@ -1,5 +1,5 @@
-const chokidar = require("chokidar");
-const { exec } = require("child_process");
+import { watch } from "chokidar";
+import { exec } from "child_process";
 
 setWatcher("./contracts", "npx hardhat compile");
 
@@ -9,8 +9,9 @@ function setWatcher(watchedDir, cmd) {
     console.log(`${filename} file was Changed`);
     exec(cmd, (_error, stdout) => console.log(`stdout:\n${stdout}`));
   };
-  chokidar
-    .watch(watchedDir)
-    .on("all", (event, filename) => filename && useCmd(filename));
+  watch(watchedDir).on(
+    "all",
+    (event, filename) => filename && useCmd(filename)
+  );
   useCmd("pre");
 }
