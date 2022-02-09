@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "node": "hardhat node --fork https://speedy-nodes-nyc.moralis.io/7c77e88ace1607b88922629c/bsc/mainnet/archive",
+    "node": "hardhat node",
+    "node-bsc": "hardhat node --fork https://speedy-nodes-nyc.moralis.io/7c77e88ace1607b88922629c/bsc/mainnet/archive",
     "test": "hardhat test --network localhost",
     "dev": "node watch"
   },
