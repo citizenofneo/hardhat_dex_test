@@ -26,7 +26,7 @@ describe('Proxy simple', function () {
 
     assert(+await proxy.var1() === 2, 'proxy var1 shoul be is 2, but: ' + +await proxy.var1())
     assert(+await proxy.var2() === 0, 'proxy var2 shoul be is 0, but: ' + +await proxy.var2())
-    assert(+await logic.var1() === 0, 'logyc var1 should be is 0, but: ' + await logic.var1())
+    assert(+await logic.var1() === 0, 'logic var1 should be is 0, but: ' + await logic.var1())
     assert(+await proxy.getVar1() === 2, 'view getVar1 should return 2, but: ' + +await proxy.getVar1())
 
   })
