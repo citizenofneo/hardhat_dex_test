@@ -19,4 +19,7 @@ contract Logic is Logic1, Logic2 {
         console.log("Setvar1: ", _var);
         var1 = _var;
     }
+    function getVar1() public view returns(uint256) {
+        return var1;
+    }
 }
